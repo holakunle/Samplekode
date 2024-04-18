@@ -1,0 +1,34 @@
+
+{
+  "roles" : {
+    "admin-role": {
+      "permissions":["all"],
+      "authorized_labels": ["*"]
+    },
+    "doctor": {
+      "permissions":["view", "share", "send", "upload","download"],
+      "authorized_labels": ["*"]
+    },
+    "radiographer": {
+      "permissions":["view", "share", "upload", "send", "download"],
+      "authorized_labels": ["*"]
+    },
+    "external-role": {
+      "permissions":["view", "download"],
+      "authorized_labels": ["external"]
+    },
+    "pacs-admin": {
+      "permissions":["view", "q-r-remote-modalities", "upload", "download", "send"],
+      "authorized_labels": ["*"]
+    },
+    "scientic-officer": {
+      "permissions":["view", "download", "send", "upload"],
+      "authorized_labels": ["non-invasive"]
+    },
+    "front-desk": {
+      "permissions":["view"],
+      "authorized_labels": ["*"]
+    }
+  }
+}
+
